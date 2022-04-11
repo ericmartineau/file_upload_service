@@ -1,0 +1,3 @@
+class grunt {
+  const grunt();
+}
