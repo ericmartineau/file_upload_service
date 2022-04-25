@@ -20,6 +20,29 @@ import 'file_upload/api/upload_request.dart';
 import 'file_upload/api/uploads_api_reader.dart';
 import 'file_upload/uploads_api.dart';
 
+// If any flutter dependencies get introduced to any of these imports ^^^ it
+// will break the generator.  To troubleshoot, uncomment this @grunt and start
+// removing dependencies until you find the offender.
+
+// @grunt()
+// class UploadLargeFile with GruntMixin<UploadLargeFile> {
+//   @override
+//   GruntFactoryFn<UploadLargeFile> get create => newUploadLargeFile;
+//
+//   @override
+//   Future execute(params) {
+//     throw UnimplementedError();
+//   }
+//
+//   @override
+//   String get key => "upload_large_file";
+//
+//   @override
+//   String? get package => "file_upload_service";
+//
+//   UploadLargeFile();
+// }
+
 class UploadFileParams {
   final PFile file;
   final String? keyName;
@@ -42,9 +65,9 @@ class UploadFileParams {
   factory UploadFileParams.fromJson(map) {
     return UploadFileParams.ofPFile(
       file: PFile.of(map['file'])!,
-      keyName: map['keyName'] as String,
-      apiToken: map['apiToken'] as String,
-      apiBasePath: map['apiBasePath'] as String,
+      keyName: map['keyName'] as String?,
+      apiToken: map['apiToken'] as String?,
+      apiBasePath: map['apiBasePath'] as String?,
       convertAspectRatio: map['convertAspectRatio']?.toString() == "true",
     );
   }
@@ -61,7 +84,7 @@ class UploadFileParams {
   }
 }
 
-@grunt()
+@grunt(logLevel: "FINE", logOutput: "console")
 class UploadLargeFile with LoggingMixin, GruntMixin<UploadLargeFile> {
   late String uploadId;
   late IUploadsApi uploads;
@@ -79,11 +102,17 @@ class UploadLargeFile with LoggingMixin, GruntMixin<UploadLargeFile> {
 
   @override
   FutureOr doInitialize() async {
-    await PFile.initialize();
-    print("UploadLargeFile doInitialize()");
+    // WidgetsFlutterBinding.ensureInitialized();
+    try {
+      await PFile.initialize();
+    } catch (e) {
+      print(e);
+    }
+    log.info("UploadLargeFile doInitialize()");
     sendUpdate(message: "Initialized files", progress: 5);
   }
 
+  // Check progress
   Future notifyProgress() async {
     final p = _bytesProcessed.values.sum();
     var progress = (_seen + p.toDouble()) * 85 / (params.file.size * 2);
@@ -108,7 +137,7 @@ class UploadLargeFile with LoggingMixin, GruntMixin<UploadLargeFile> {
         message:
             "file: ${params.file.name} size ${params.file.size.formatBytes()}");
     var pfile = params.file;
-    this.sendUpdate(message: "founded file: ${pfile}");
+    this.sendUpdate(message: "found file: ${pfile}");
 
     uploads = UploadsApi(
       ApiClient(
@@ -226,29 +255,27 @@ class UploadLargeFile with LoggingMixin, GruntMixin<UploadLargeFile> {
   }
 
   Future<ETagResponse> uploadPart(int me, List<int> chunk) async {
-    log.info("Upload part $me size ${chunk.length}");
-    // final etag = await uploads.uploadPart(uploadId,
-    //     body: chunk.chunked(1024 * 1024 * 2).toList(),
-    //     pathname: params.keyName,
-    //     partnumber: "$me");
-    // await 3.seconds.pause();
+    log.info("  Upload part $me size ${chunk.length}");
+
     Dio _dio = Dio(
       BaseOptions(baseUrl: params.apiBasePath!, headers: {
         "Authorization": "Bearer ${params.apiToken}",
       }),
     );
 
+    final stream = Stream<List<int>>.fromIterable(
+        chunk.chunked(1024 * 1024).map((e) => [...e])).asBroadcastStream();
     var resp = await _dio.post<Map<String, dynamic>>(
       "/uploads/$uploadId/parts",
-      data: Stream.fromIterable(chunk.chunked(1024 * 1024)),
+      data: stream,
       onSendProgress: (completed, outof) async {
-        log.info("Buffered $completed/$outof bytes");
+        log.info("  Buffered $completed/$outof bytes");
         sendUpdate(message: "Buffered $completed/$outof bytes");
         _bytesProcessed[me] = completed;
         await notifyProgress();
       },
       onReceiveProgress: (completed, outof) async {
-        log.info("Recieved $completed/$outof bytes");
+        log.info("  Received $completed/$outof bytes");
         sendUpdate(message: "Received $completed/$outof bytes");
       },
       options: Options(
@@ -263,11 +290,12 @@ class UploadLargeFile with LoggingMixin, GruntMixin<UploadLargeFile> {
     );
 
     var etag = ETagResponse.fromJson(resp.data);
+
     message = "Completed upload for part: ${_currentPart - 1}";
 
     _bytesProcessed[me] = chunk.length;
     notifyProgress();
-    // var etag = ETagResponse.fromJson(resp.data);
+
     log.info(" -> $me: ${etag.partName}");
     return etag;
   }
@@ -300,7 +328,7 @@ class UploadLargeFile with LoggingMixin, GruntMixin<UploadLargeFile> {
   String get key => "upload_large_file";
 
   @override
-  String get package => "sunny_services";
+  String get package => "file_upload_service";
 }
 
 UploadLargeFile newUploadLargeFile() => UploadLargeFile();

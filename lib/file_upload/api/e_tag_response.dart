@@ -8,10 +8,13 @@ import 'package:sunny_sdk_core/mverse/m_model.dart';
 import '../mixins/sunny_main.dart'; // ignore: unused_import, directives_ordering
 
 class ETagResponse extends ETagResponseBase with ETagResponseMixin {
-  ETagResponse(Map<String, dynamic> wrapped, {MSchemaRef mtype = ETagResponseRef, bool update = true})
+  ETagResponse(Map<String, dynamic> wrapped,
+      {MSchemaRef mtype = ETagResponseRef, bool update = true})
       : super(wrapped, mtype: mtype, update: update);
 
-  factory ETagResponse.fromJson(wrapped) => wrapped is ETagResponse ? wrapped : ETagResponse(wrapped as Map<String, dynamic>);
+  factory ETagResponse.fromJson(wrapped) => wrapped is ETagResponse
+      ? wrapped
+      : ETagResponse(wrapped as Map<String, dynamic>);
 
   ETagResponse.of({String? partName, int? partNumber})
       : super.of(
@@ -37,13 +40,16 @@ class ETagResponse extends ETagResponseBase with ETagResponseMixin {
 }
 
 abstract class ETagResponseBase extends MModel {
-  ETagResponseBase(Map<String, dynamic> wrapped, {MSchemaRef mtype = ETagResponseRef, bool? update})
+  ETagResponseBase(Map<String, dynamic> wrapped,
+      {MSchemaRef mtype = ETagResponseRef, bool? update})
       : super(wrapped, mtype: mtype, update: false) {
     if (update == true) takeFromMap(wrapped, copyEntries: false);
   }
 
-  ETagResponseBase.fromJson(wrapped) : this(wrapped as Map<String, dynamic>, update: true);
-  ETagResponseBase.of({String? partName, int? partNumber}) : super(<String, dynamic>{}, mtype: ETagResponseRef) {
+  ETagResponseBase.fromJson(wrapped)
+      : this(wrapped as Map<String, dynamic>, update: true);
+  ETagResponseBase.of({String? partName, int? partNumber})
+      : super(<String, dynamic>{}, mtype: ETagResponseRef) {
     if (partName != null) this.partName = partName;
     if (partNumber != null) this.partNumber = partNumber;
   }
@@ -138,9 +144,12 @@ class ETagResponseFields {
 }
 
 class ETagResponsePaths {
-  static const JsonPath<String> partName = JsonPath.internal(["partName"], "/partName");
-  static const JsonPath<int> partNumber = JsonPath.internal(["partNumber"], "/partNumber");
+  static const JsonPath<String> partName =
+      JsonPath.internal(["partName"], "/partName");
+  static const JsonPath<int> partNumber =
+      JsonPath.internal(["partNumber"], "/partNumber");
   static final Set<JsonPath> values = {partName, partNumber};
 }
 
-const ETagResponseRef = MSchemaRef("mverse", "sunnyMain", "eTagResponse", "0.0.1", "ephemeral");
+const ETagResponseRef =
+    MSchemaRef("mverse", "sunnyMain", "eTagResponse", "0.0.1", "ephemeral");

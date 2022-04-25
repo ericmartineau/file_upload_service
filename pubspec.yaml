@@ -11,35 +11,42 @@ dependencies:
   observable_collections: ^0.7.0+5
   dartx: ^0.7.1
   dartxx: ^0.5.4
-  dio: ^4.0.3
-  facts: ^1.0.5
-  firebase: ^9.0.2
-  firebase_storage: ^10.1.0
-  flutter_contact: ^0.9.1+8
-  full_text_search: ^0.8.0+3
-  floor: ^1.2.0
+  dio: ^4.0.6
+#   facts: ^1.0.5
+#   firebase: ^9.0.2
+#   firebase_storage: ^10.1.0
+#   flutter_contact: ^0.9.1+8
+#   full_text_search: ^0.8.0+3
+#   floor: ^1.2.0
   http: ^0.13.4
   logging: ^1.0.2
   logging_config: ^0.6.7+7
-  permission_handler: ^8.3.0
+  permission_handler: ^9.2.0
   pfile: ^2.1.0+4
-  pfile_picker: ^3.1.4+2
+#     path: ../pfile
+#   pfile_picker: ^3.1.4+2
   semaphore: ^0.2.1
   stream_transform: ^2.0.0
-  sunny_kiwi: ^0.3.0+1
-  sunny_forms: ^0.6.0+12
+#   sunny_kiwi: ^0.3.0+1
+#   sunny_forms: ^0.6.0+12
   grunt_web_worker_gen:
     path: ../worker_service/grunt_web_worker_gen
-  graphql: ^5.0.0
-  gql_http_link: ^0.4.0
-  sunny_dart: ^0.11.0+8
+  graphql: ^5.1.1
+  gql_http_link: ^0.4.2
+#   sunny_dart: ^0.11.0+8
   sunny_service_stubs: ^0.5.0+10
-  sunny_sdk_core: ^2.4.0+8
+  sunny_sdk_core: ^2.4.0+16
   worker_service: ^0.7.2+17
 
+dependency_overrides:
+  sunny_service_stubs:
+    path: ../sunny_service_stubs
+  sunny_sdk_core:
+    path: ../sunny_sdk_core
+  worker_service:
+    path: /Users/ericm/sunny/local_plugins/worker_service
 dev_dependencies:
-
-  build_runner: ^2.1.8
+  build_runner: ^2.1.10
 #   build_web_compilers: ^3.2.2
   provider: any
 
