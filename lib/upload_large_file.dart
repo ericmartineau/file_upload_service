@@ -250,6 +250,7 @@ class UploadLargeFile with LoggingMixin, GruntMixin<UploadLargeFile> {
       sendUpdate(message: "Done!");
     } catch (e, s) {
       log.severe(e, s);
+      
       rethrow;
     }
   }
