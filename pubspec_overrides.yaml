@@ -1,24 +1,77 @@
-# melos_managed_dependency_overrides: dartxx,flutter_degen,grunt_web_worker_gen,observable_collections,pfile,sunny_dart,sunny_sdk_core,sunny_service_stubs,worker_service,flutter_degen_annotations,flexidate
-dependency_overrides:
-  dartxx:
-    path: ../dartxx
-  flexidate:
-    path: ../flexidate
-  flutter_degen:
-    path: ../flutter_degen
-  flutter_degen_annotations:
-    path: ../flutter_degen_annotations
-  grunt_web_worker_gen:
-    path: ../grunt_web_worker_gen
-  observable_collections:
-    path: ../observable_collections
-  pfile:
-    path: ../pfile
-  sunny_dart:
-    path: ../sunny_dart
-  sunny_sdk_core:
-    path: ../sunny_sdk_core
-  sunny_service_stubs:
-    path: ../sunny_service_stubs
-  worker_service:
-    path: ../worker_service
+dependency_overrides: 
+  async: ^2.10.0
+  build_config: ^1.1.1
+  build_runner: ^2.4.0
+  collection: ^1.17.1
+  crypto: ^3.0.2
+  dartx: ^1.1.0
+  dio: ^4.0.6
+  equatable: ^2.0.5
+  ffi: ^2.0.1
+  firebase_auth: ^4.2.5
+  firebase_core: ^2.4.1
+  phone_numbers_parser: ^7.0.0+1
+  graphql: ^5.1.3
+  gql: ^0.14.1-alpha+1672756470474
+  http: ^0.13.5
+  inflection3: ^0.5.3+2
+  intl: ^0.18.0
+  js: ^0.6.7
+  logging: ^1.1.1
+  meta: ^1.9.0
+  mobx: ^2.1.3+1
+  path: ^1.8.3
+  path_provider: ^2.0.12
+  pedantic: ^1.11.1
+  permission_handler: ^10.2.0
+  platform: ^3.1.0
+  plugin_platform_interface: ^2.1.3
+  provider: ^6.0.5
+  pub_semver: ^2.1.3
+  recase: ^4.1.0
+  responsive_builder: ^0.5.0+1
+  sprintf: ^7.0.0
+  stream_transform: ^2.1.0
+  uuid: ^3.0.0
+  uri: ^1.0.0
+  win32: ^4.1.1
+  analyzer: ^5.4.0
+  timezone: ^0.9.1
+  collection_diff: 
+    path: /Users/ericm/reliveit/checkout/SunnyApp/collection_diff
+  collection_diff_worker: 
+    path: /Users/ericm/reliveit/checkout/SunnyApp/collection_diff_worker
+  flexidate: 
+    path: /Users/ericm/reliveit/checkout/ericmartineau/flexidate
+  flutter_degen: 
+    path: /Users/ericm/reliveit/checkout/SunnyApp/flutter_degen
+  flutter_degen_annotations: 
+    path: /Users/ericm/reliveit/checkout/ericmartineau/flutter_degen_annotations
+  grunt_web_worker_gen: 
+    path: /Users/ericm/reliveit/checkout/ericmartineau/grunt_web_worker_gen
+  info_x: 
+    path: /Users/ericm/reliveit/checkout/ericmartineau/info_x
+  isolates: 
+    path: /Users/ericm/reliveit/checkout/SunnyApp/isolate
+  logging_config: 
+    path: /Users/ericm/reliveit/checkout/SunnyApp/logging_config
+  observable_collections: 
+    path: /Users/ericm/reliveit/checkout/SunnyApp/observable_collections
+  pfile: 
+    path: /Users/ericm/reliveit/checkout/SunnyApp/pfile
+  sunny_dart: 
+    path: /Users/ericm/reliveit/checkout/SunnyApp/sunny_dart
+  sunny_data: 
+    path: /Users/ericm/reliveit/checkout/SunnyApp/sunny_data
+  sunny_sdk_core: 
+    path: /Users/ericm/reliveit/checkout/SunnyApp/sunny_sdk_core
+  sunny_service_stubs: 
+    path: /Users/ericm/reliveit/checkout/ericmartineau/sunny_service_stubs
+  platform_detect2: 
+    path: /Users/ericm/reliveit/checkout/ericmartineau/platform_detect
+  worker_service: 
+    path: /Users/ericm/reliveit/checkout/SunnyApp/worker_service
+  dartxx: 
+    path: /Users/ericm/reliveit/checkout/ericmartineau/dartxx
+  m_entity: 
+    path: /Users/ericm/reliveit/checkout/SunnyApp/sunny_entities/m_entity
