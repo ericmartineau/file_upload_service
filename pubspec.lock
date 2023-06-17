@@ -5,26 +5,26 @@ packages:
     dependency: transitive
     description:
       name: _fe_analyzer_shared
-      sha256: "0c80aeab9bc807ab10022cd3b2f4cf2ecdf231949dc1ddd9442406a003f19201"
+      sha256: ae92f5d747aee634b87f89d9946000c2de774be1d6ac3e58268224348cd0101a
       url: "https://pub.dev"
     source: hosted
-    version: "52.0.0"
+    version: "61.0.0"
   _flutterfire_internals:
     dependency: transitive
     description:
       name: _flutterfire_internals
-      sha256: e1d4810cd162d842ab1578239a4279a2402d3c1731c1345286df027c830890f8
+      sha256: "9ebe81588e666f7e2b21309f2b5653bd9642d7f27fd0a6894278d2ff40cb9481"
       url: "https://pub.dev"
     source: hosted
-    version: "1.0.9"
+    version: "1.3.2"
   analyzer:
     dependency: "direct overridden"
     description:
       name: analyzer
-      sha256: cd8ee83568a77f3ae6b913a36093a1c9b1264e7cb7f834d9ddd2311dade9c1f4
+      sha256: ea3d8652bda62982addfd92fdc2d0214e5f82e43325104990d4f4c4a2a313562
       url: "https://pub.dev"
     source: hosted
-    version: "5.4.0"
+    version: "5.13.0"
   archive:
     dependency: transitive
     description:
@@ -45,10 +45,10 @@ packages:
     dependency: "direct overridden"
     description:
       name: async
-      sha256: bfe67ef28df125b7dddcea62755991f807aa39a2492a23e1550161692950bbe0
+      sha256: "947bfcf187f74dbc5e146c9eb9c0f10c9f8b30743e341481c1e2ed3ecc18c20c"
       url: "https://pub.dev"
     source: hosted
-    version: "2.10.0"
+    version: "2.11.0"
   bazel_worker:
     dependency: transitive
     description:
@@ -69,10 +69,10 @@ packages:
     dependency: "direct main"
     description:
       name: buffer
-      sha256: "850b666e7d27c5cf42f39c43d3a9d37b7b35519b9715d9f85b418d76201518c6"
+      sha256: "8962c12174f53e2e848a6acd7ac7fd63d8a1a6a316c20c458a832d87eba5422a"
       url: "https://pub.dev"
     source: hosted
-    version: "1.1.1"
+    version: "1.2.0"
   build:
     dependency: transitive
     description:
@@ -93,18 +93,18 @@ packages:
     dependency: transitive
     description:
       name: build_daemon
-      sha256: "6bc5544ea6ce4428266e7ea680e945c68806c4aae2da0eb5e9ccf38df8d6acbf"
+      sha256: "5f02d73eb2ba16483e693f80bee4f088563a820e47d1027d4cdfe62b5bb43e65"
       url: "https://pub.dev"
     source: hosted
-    version: "3.1.0"
+    version: "4.0.0"
   build_modules:
-    dependency: transitive
+    dependency: "direct overridden"
     description:
       name: build_modules
-      sha256: "48946ee056939d50a9466babe24333c738526310e744a2498f02f86f084f24d8"
+      sha256: "017226b2fd3eef4e5f31839c930efad33110cdfe71b6255c7dca298b38dba61c"
       url: "https://pub.dev"
     source: hosted
-    version: "4.0.5"
+    version: "5.0.2"
   build_resolvers:
     dependency: transitive
     description:
@@ -117,10 +117,10 @@ packages:
     dependency: "direct dev"
     description:
       name: build_runner
-      sha256: a3335cae313ea41f193e5637f98185e5cb37b3fde2c5c4654ac546b8164e59ac
+      sha256: "220ae4553e50d7c21a17c051afc7b183d28a24a420502e842f303f8e4e6edced"
       url: "https://pub.dev"
     source: hosted
-    version: "2.4.0"
+    version: "2.4.4"
   build_runner_core:
     dependency: transitive
     description:
@@ -130,13 +130,13 @@ packages:
     source: hosted
     version: "7.2.3"
   build_web_compilers:
-    dependency: transitive
+    dependency: "direct overridden"
     description:
       name: build_web_compilers
-      sha256: ab963f5994cbde8cbf4d61f78fe901bb2503bfebb4309060bd7e28d0c14b5a52
+      sha256: e614f5e1317fe9b2574429e3e651951a1c38943416c047e02815a7d6ade264c9
       url: "https://pub.dev"
     source: hosted
-    version: "3.2.3"
+    version: "4.0.3"
   built_collection:
     dependency: transitive
     description:
@@ -157,10 +157,10 @@ packages:
     dependency: transitive
     description:
       name: characters
-      sha256: e6a326c8af69605aec75ed6c187d06b349707a27fbff8222ca9cc2cff167975c
+      sha256: "04a925763edad70e8443c99234dc3328f442e811f1d8fd1a72f1c8ad0f69a605"
       url: "https://pub.dev"
     source: hosted
-    version: "1.2.1"
+    version: "1.3.0"
   charcode:
     dependency: transitive
     description:
@@ -193,22 +193,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.1.1"
-  cloud_firestore_platform_interface:
-    dependency: transitive
-    description:
-      name: cloud_firestore_platform_interface
-      sha256: ea3d1d12d72ecaa58909d93e50aca53263d3bf06b904a7f0f1dcd5798941c09b
-      url: "https://pub.dev"
-    source: hosted
-    version: "5.9.0"
-  cloud_firestore_web:
-    dependency: transitive
-    description:
-      name: cloud_firestore_web
-      sha256: "3c9a77380e6a053129c2cb6dbe8ef1b708f4350ce0dad220d2c05cd68a2d467f"
-      url: "https://pub.dev"
-    source: hosted
-    version: "3.1.0"
   code_builder:
     dependency: transitive
     description:
@@ -221,21 +205,21 @@ packages:
     dependency: "direct overridden"
     description:
       name: collection
-      sha256: "4a07be6cb69c84d677a6c3096fcf960cc3285a8330b4603e0d463d15d9bd934c"
+      sha256: f092b211a4319e98e5ff58223576de6c2803db36221657b46c82574721240687
       url: "https://pub.dev"
     source: hosted
-    version: "1.17.1"
+    version: "1.17.2"
   collection_diff:
     dependency: "direct main"
     description:
-      path: "/Users/ericm/reliveit/checkout/SunnyApp/collection_diff"
+      path: "/Users/ericm/aesthetika/checkout/SunnyApp/collection_diff"
       relative: false
     source: path
     version: "2.0.3+6"
   collection_diff_worker:
     dependency: "direct overridden"
     description:
-      path: "/Users/ericm/reliveit/checkout/SunnyApp/collection_diff_worker"
+      path: "/Users/ericm/aesthetika/checkout/SunnyApp/collection_diff_worker"
       relative: false
     source: path
     version: "0.5.5+7"
@@ -251,10 +235,10 @@ packages:
     dependency: "direct overridden"
     description:
       name: crypto
-      sha256: aa274aa7774f8964e4f4f38cc994db7b6158dd36e9187aaceaddc994b35c6c67
+      sha256: ff625774173754681d66daaf4a448684fb04b78f902da9cb3d308c19cc5e8bab
       url: "https://pub.dev"
     source: hosted
-    version: "3.0.2"
+    version: "3.0.3"
   dart_countries:
     dependency: transitive
     description:
@@ -264,13 +248,13 @@ packages:
     source: hosted
     version: "3.0.3"
   dart_style:
-    dependency: transitive
+    dependency: "direct overridden"
     description:
       name: dart_style
-      sha256: "8aff82f9b26fd868992e5430335a9d773bfef01e1d852d7ba71bf4c5d9349351"
+      sha256: f4f1f73ab3fd2afcbcca165ee601fe980d966af6a21b5970c6c9376955c528ad
       url: "https://pub.dev"
     source: hosted
-    version: "2.2.3"
+    version: "2.3.1"
   dartx:
     dependency: "direct main"
     description:
@@ -282,7 +266,7 @@ packages:
   dartxx:
     dependency: "direct main"
     description:
-      path: "/Users/ericm/reliveit/checkout/ericmartineau/dartxx"
+      path: "/Users/ericm/aesthetika/checkout/ericmartineau/dartxx"
       relative: false
     source: path
     version: "0.5.5"
@@ -290,10 +274,10 @@ packages:
     dependency: "direct main"
     description:
       name: dio
-      sha256: "7d328c4d898a61efc3cd93655a0955858e29a0aa647f0f9e02d59b3bb275e2e8"
+      sha256: b99b1d56dc0d5dece70957023af002dbd49614b4a1bf86d3a254af3fe781bdf2
       url: "https://pub.dev"
     source: hosted
-    version: "4.0.6"
+    version: "5.2.0+1"
   equatable:
     dependency: "direct overridden"
     description:
@@ -314,10 +298,10 @@ packages:
     dependency: "direct overridden"
     description:
       name: ffi
-      sha256: a38574032c5f1dd06c4aee541789906c12ccaab8ba01446e800d9c5b79c4a978
+      sha256: ed5337a5660c506388a9f012be0288fb38b49020ce2b45fe1f8b8323fe429f99
       url: "https://pub.dev"
     source: hosted
-    version: "2.0.1"
+    version: "2.0.2"
   file:
     dependency: transitive
     description:
@@ -330,50 +314,50 @@ packages:
     dependency: "direct overridden"
     description:
       name: firebase_auth
-      sha256: ac3c7c8022c1032c1dc7d16e62db1d6f1e2fbdc8c1039ee706d8deb45eca3a42
+      sha256: "19508428ca37f611ae47067ee6ebb3ba5a27014941177cc224f71bf7d0720cdd"
       url: "https://pub.dev"
     source: hosted
-    version: "4.2.5"
+    version: "4.6.2"
   firebase_auth_platform_interface:
     dependency: transitive
     description:
       name: firebase_auth_platform_interface
-      sha256: "535263a55641e705dba63dc4f412e7c3ad39f9061cbfaf82de640092b53f91f2"
+      sha256: e46e136a6f6eec88b30f12445ff7f5b19b23b7ede694921ced4f8eba8eb634f6
       url: "https://pub.dev"
     source: hosted
-    version: "6.11.3"
+    version: "6.15.2"
   firebase_auth_web:
     dependency: transitive
     description:
       name: firebase_auth_web
-      sha256: "3fb9fafcd3541005a309c1a696f7df6294893a0c44f010f4ed1b0ded4793c858"
+      sha256: "553bd576d793d05b920971a2c7ab02bd049d4971153702074ea2555877efd392"
       url: "https://pub.dev"
     source: hosted
-    version: "5.2.4"
+    version: "5.5.2"
   firebase_core:
     dependency: "direct overridden"
     description:
       name: firebase_core
-      sha256: c129209ba55f3d4272c89fb4a4994c15bea77fb6de63a82d45fb6bc5c94e4355
+      sha256: e9b36b391690cf329c6fb1de220045e97c13784c303820cd33962319580a56c6
       url: "https://pub.dev"
     source: hosted
-    version: "2.4.1"
+    version: "2.13.1"
   firebase_core_platform_interface:
     dependency: transitive
     description:
       name: firebase_core_platform_interface
-      sha256: "5fab93f5b354648efa62e7cc829c90efb68c8796eecf87e0888cae2d5f3accd4"
+      sha256: b63e3be6c96ef5c33bdec1aab23c91eb00696f6452f0519401d640938c94cba2
       url: "https://pub.dev"
     source: hosted
-    version: "4.5.2"
+    version: "4.8.0"
   firebase_core_web:
     dependency: transitive
     description:
       name: firebase_core_web
-      sha256: "18b35ce111b0a4266abf723c825bcf9d4e2519d13638cc7f06f2a8dd960c75bc"
+      sha256: "8c0f4c87d20e2d001a5915df238c1f9c88704231f591324205f5a5d2a7740a45"
       url: "https://pub.dev"
     source: hosted
-    version: "2.1.0"
+    version: "2.5.0"
   fixnum:
     dependency: transitive
     description:
@@ -385,7 +369,7 @@ packages:
   flexidate:
     dependency: "direct overridden"
     description:
-      path: "/Users/ericm/reliveit/checkout/ericmartineau/flexidate"
+      path: "/Users/ericm/aesthetika/checkout/ericmartineau/flexidate"
       relative: false
     source: path
     version: "0.8.0+3"
@@ -397,14 +381,14 @@ packages:
   flutter_degen:
     dependency: "direct overridden"
     description:
-      path: "/Users/ericm/reliveit/checkout/SunnyApp/flutter_degen"
+      path: "/Users/ericm/aesthetika/checkout/SunnyApp/flutter_degen"
       relative: false
     source: path
     version: "0.8.2+1"
   flutter_degen_annotations:
     dependency: "direct overridden"
     description:
-      path: "/Users/ericm/reliveit/checkout/ericmartineau/flutter_degen_annotations"
+      path: "/Users/ericm/aesthetika/checkout/ericmartineau/flutter_degen_annotations"
       relative: false
     source: path
     version: "1.7.0"
@@ -438,78 +422,78 @@ packages:
     dependency: "direct overridden"
     description:
       name: gql
-      sha256: "0db9fcebe50d919ff7d872b70f035722771b0789cdee17c8aa27e850445592a9"
+      sha256: b05d544d709d276c0cced82d630518e92139b426b20d1b11e973e123d07fbf52
       url: "https://pub.dev"
     source: hosted
-    version: "0.14.1-alpha+1672756470474"
+    version: "1.0.0"
   gql_dedupe_link:
     dependency: transitive
     description:
       name: gql_dedupe_link
-      sha256: "89681048cf956348e865da872a40081499b8c087fc84dd4d4b9c134bd70d27b3"
+      sha256: dac8e5eec5e9f6274302e5c01f77c7558f89d727f2c0dff7cda568c440a171cd
       url: "https://pub.dev"
     source: hosted
-    version: "2.0.3+1"
+    version: "2.0.4-alpha+1686240656097"
   gql_error_link:
     dependency: transitive
     description:
       name: gql_error_link
-      sha256: e7bfdd2b6232f3e15861cd96c2ad6b7c9c94693843b3dea18295136a5fb5b534
+      sha256: bfdb543137da89448cc5d003fd029c2e8718931d39d4a7dedb16f9169862fbb9
       url: "https://pub.dev"
     source: hosted
-    version: "0.2.3+1"
+    version: "1.0.0"
   gql_exec:
     dependency: transitive
     description:
       name: gql_exec
-      sha256: "0d1fdb2e4154efbfc1dcf3f35ec36d19c8428ff0d560eb4c45b354f8f871dc50"
+      sha256: "04fb14e41fdc3fafa80fa7218224bceba019e00b80de9130c2dd0a9a77c6392d"
       url: "https://pub.dev"
     source: hosted
-    version: "0.4.3"
+    version: "1.0.1-alpha+1686240655996"
   gql_http_link:
     dependency: "direct main"
     description:
       name: gql_http_link
-      sha256: "89ef87b32947acf4189f564c095f1148b0ab9bb9996fe518716dbad66708b834"
+      sha256: "365c0e72da7e29e007c4a0ed7a470f6c03af1ef00acd2af3c22157c8bb47f314"
       url: "https://pub.dev"
     source: hosted
-    version: "0.4.5"
+    version: "1.0.0"
   gql_link:
     dependency: transitive
     description:
       name: gql_link
-      sha256: "9643b518aa2ed14ab2322ebccd561263fe29fc2812c443c0c2b2c849e25550ec"
+      sha256: ecf2419e6c543d1b8dedd7dbbc538ce037f4d53a3b5b7d694a98a7d636da2817
       url: "https://pub.dev"
     source: hosted
-    version: "0.5.0+1"
+    version: "1.0.1-alpha+1686240656001"
   gql_transform_link:
     dependency: transitive
     description:
       name: gql_transform_link
-      sha256: b1735a9a92d25a92960002a8b40dfaede95ec1e5ed848906125d69efd878661f
+      sha256: "0645fdd874ca1be695fd327271fdfb24c0cd6fa40774a64b946062f321a59709"
       url: "https://pub.dev"
     source: hosted
-    version: "0.2.2+1"
+    version: "1.0.0"
   graphql:
     dependency: "direct main"
     description:
       name: graphql
-      sha256: b061201579040e9548cec2bae17bbdea0ab30666cb4e7ba48b9675f14d982199
+      sha256: ad11e6d12de4d73971ae1dd80885b09f3cbc0bf143b1cbc5622a6dc6d85735e7
       url: "https://pub.dev"
     source: hosted
-    version: "5.1.3"
+    version: "5.2.0-beta.4"
   graphs:
     dependency: transitive
     description:
       name: graphs
-      sha256: ae0b3d956ff324c6f8671f08dcb2dbd71c99cdbf2aa3ca63a14190c47aa6679c
+      sha256: aedc5a15e78fc65a6e23bcd927f24c64dd995062bcd1ca6eda65a3cff92a4d19
       url: "https://pub.dev"
     source: hosted
-    version: "2.1.0"
+    version: "2.3.1"
   grunt_web_worker_gen:
     dependency: "direct main"
     description:
-      path: "/Users/ericm/reliveit/checkout/ericmartineau/grunt_web_worker_gen"
+      path: "/Users/ericm/aesthetika/checkout/ericmartineau/grunt_web_worker_gen"
       relative: false
     source: path
     version: "0.8.7+1"
@@ -525,10 +509,10 @@ packages:
     dependency: "direct main"
     description:
       name: http
-      sha256: "6aa2946395183537c8b880962d935877325d6a09a2867c3970c05c0fed6ac482"
+      sha256: "4c3f04bfb64d3efd508d06b41b825542f08122d30bda4933fb95c069d22a4fa3"
       url: "https://pub.dev"
     source: hosted
-    version: "0.13.5"
+    version: "1.0.0"
   http_multi_server:
     dependency: transitive
     description:
@@ -556,7 +540,7 @@ packages:
   info_x:
     dependency: "direct overridden"
     description:
-      path: "/Users/ericm/reliveit/checkout/ericmartineau/info_x"
+      path: "/Users/ericm/aesthetika/checkout/ericmartineau/info_x"
       relative: false
     source: path
     version: "0.8.0+3"
@@ -564,10 +548,10 @@ packages:
     dependency: "direct overridden"
     description:
       name: intl
-      sha256: a3715e3bc90294e971cb7dc063fbf3cd9ee0ebf8604ffeafabd9e6f16abbdbe6
+      sha256: "3bc132a9dbce73a7e4a21a17d06e1878839ffbf975568bc875c60537824b0c4d"
       url: "https://pub.dev"
     source: hosted
-    version: "0.18.0"
+    version: "0.18.1"
   io:
     dependency: transitive
     description:
@@ -579,7 +563,7 @@ packages:
   isolates:
     dependency: "direct overridden"
     description:
-      path: "/Users/ericm/reliveit/checkout/SunnyApp/isolate"
+      path: "/Users/ericm/aesthetika/checkout/SunnyApp/isolate"
       relative: false
     source: path
     version: "3.0.3+8"
@@ -603,21 +587,21 @@ packages:
     dependency: "direct main"
     description:
       name: logging
-      sha256: "04094f2eb032cbb06c6f6e8d3607edcfcb0455e2bb6cbc010cb01171dcb64e6d"
+      sha256: "623a88c9594aa774443aa3eb2d41807a48486b5613e67599fb4c41c0ad47c340"
       url: "https://pub.dev"
     source: hosted
-    version: "1.1.1"
+    version: "1.2.0"
   logging_config:
     dependency: "direct main"
     description:
-      path: "/Users/ericm/reliveit/checkout/SunnyApp/logging_config"
+      path: "/Users/ericm/aesthetika/checkout/SunnyApp/logging_config"
       relative: false
     source: path
     version: "0.6.7+7"
   m_entity:
     dependency: "direct overridden"
     description:
-      path: "/Users/ericm/reliveit/checkout/SunnyApp/sunny_entities/m_entity"
+      path: "/Users/ericm/aesthetika/checkout/SunnyApp/sunny_entities/m_entity"
       relative: false
     source: path
     version: "1.1.4"
@@ -625,26 +609,26 @@ packages:
     dependency: transitive
     description:
       name: matcher
-      sha256: "16db949ceee371e9b99d22f88fa3a73c4e59fd0afed0bd25fc336eb76c198b72"
+      sha256: "6501fbd55da300384b768785b83e5ce66991266cec21af89ab9ae7f5ce1c4cbb"
       url: "https://pub.dev"
     source: hosted
-    version: "0.12.13"
+    version: "0.12.15"
   material_color_utilities:
     dependency: transitive
     description:
       name: material_color_utilities
-      sha256: d92141dc6fe1dad30722f9aa826c7fbc896d021d792f80678280601aff8cf724
+      sha256: "586678f20e112219ed0f73215f01bcdf1d769824ba2ebae45ad918a9bfde9bdb"
       url: "https://pub.dev"
     source: hosted
-    version: "0.2.0"
+    version: "0.3.0"
   meta:
     dependency: "direct overridden"
     description:
       name: meta
-      sha256: "12307e7f0605ce3da64cf0db90e5fcab0869f3ca03f76be6bb2991ce0a55e82b"
+      sha256: "3c74dbf8763d36539f114c799d8a2d87343b5067e9d796ca22b5eb8437090ee3"
       url: "https://pub.dev"
     source: hosted
-    version: "1.9.0"
+    version: "1.9.1"
   mime:
     dependency: transitive
     description:
@@ -673,14 +657,14 @@ packages:
     dependency: transitive
     description:
       name: normalize
-      sha256: baf8caf2d8b745af5737cca6c24f7fe3cf3158897fdbcde9a909b9c8d3e2e5af
+      sha256: "8a60e37de5b608eeaf9b839273370c71ebba445e9f73b08eee7725e0d92dbc43"
       url: "https://pub.dev"
     source: hosted
-    version: "0.7.2"
+    version: "0.8.2+1"
   observable_collections:
     dependency: "direct main"
     description:
-      path: "/Users/ericm/reliveit/checkout/SunnyApp/observable_collections"
+      path: "/Users/ericm/aesthetika/checkout/SunnyApp/observable_collections"
       relative: false
     source: path
     version: "0.7.1"
@@ -704,10 +688,10 @@ packages:
     dependency: "direct overridden"
     description:
       name: path_provider
-      sha256: dcea5feb97d8abf90cab9e9030b497fb7c3cbf26b7a1fe9e3ef7dcb0a1ddec95
+      sha256: "3087813781ab814e4157b172f1a11c46be20179fcc9bea043e0fba36bc0acaa2"
       url: "https://pub.dev"
     source: hosted
-    version: "2.0.12"
+    version: "2.0.15"
   path_provider_android:
     dependency: transitive
     description:
@@ -799,7 +783,7 @@ packages:
   pfile:
     dependency: "direct main"
     description:
-      path: "/Users/ericm/reliveit/checkout/SunnyApp/pfile"
+      path: "/Users/ericm/aesthetika/checkout/SunnyApp/pfile"
       relative: false
     source: path
     version: "2.2.0"
@@ -815,10 +799,10 @@ packages:
     dependency: "direct overridden"
     description:
       name: phone_numbers_parser
-      sha256: "77f2ee1741c346f137001c10e43c70924251332ef2773c823fcd3c21bc40a1d9"
+      sha256: a3659911edc70e13da02a4d4374e4600b0862f8a56b94ba6a9d67afa9aba830d
       url: "https://pub.dev"
     source: hosted
-    version: "7.0.0+1"
+    version: "7.0.2"
   platform:
     dependency: "direct overridden"
     description:
@@ -830,7 +814,7 @@ packages:
   platform_detect2:
     dependency: "direct overridden"
     description:
-      path: "/Users/ericm/reliveit/checkout/ericmartineau/platform_detect"
+      path: "/Users/ericm/aesthetika/checkout/ericmartineau/platform_detect"
       relative: false
     source: path
     version: "1.5.0+2"
@@ -838,10 +822,10 @@ packages:
     dependency: "direct overridden"
     description:
       name: plugin_platform_interface
-      sha256: dbf0f707c78beedc9200146ad3cb0ab4d5da13c246336987be6940f026500d3a
+      sha256: "6a2128648c854906c53fa8e33986fc0247a1116122f9534dd20e3ab9e16a32bc"
       url: "https://pub.dev"
     source: hosted
-    version: "2.1.3"
+    version: "2.1.4"
   pool:
     dependency: transitive
     description:
@@ -878,10 +862,10 @@ packages:
     dependency: "direct overridden"
     description:
       name: pub_semver
-      sha256: "307de764d305289ff24ad257ad5c5793ce56d04947599ad68b3baa124105fc17"
+      sha256: "40d3ab1bbd474c4c2328c91e3a7df8c6dd629b79ece4c4bd04bee496a224fb0c"
       url: "https://pub.dev"
     source: hosted
-    version: "2.1.3"
+    version: "2.1.4"
   pubspec_parse:
     dependency: transitive
     description:
@@ -910,10 +894,10 @@ packages:
     dependency: "direct overridden"
     description:
       name: responsive_builder
-      sha256: "0f082dff291f5ee4b4ef713d7d1e2a242b126204559024de07039aa7d9012aa5"
+      sha256: a38ba9ba86c9daf08904674553034b651377b1d685d10ee450d8350ae51f76ec
       url: "https://pub.dev"
     source: hosted
-    version: "0.5.0+1"
+    version: "0.7.0"
   rxdart:
     dependency: transitive
     description:
@@ -960,13 +944,13 @@ packages:
     source: sdk
     version: "0.0.99"
   source_gen:
-    dependency: transitive
+    dependency: "direct overridden"
     description:
       name: source_gen
-      sha256: "00f8b6b586f724a8c769c96f1d517511a41661c0aede644544d8d86a1ab11142"
+      sha256: "373f96cf5a8744bc9816c1ff41cf5391bbdbe3d7a96fe98c622b6738a8a7bd33"
       url: "https://pub.dev"
     source: hosted
-    version: "1.2.2"
+    version: "1.3.2"
   source_maps:
     dependency: transitive
     description:
@@ -979,10 +963,10 @@ packages:
     dependency: transitive
     description:
       name: source_span
-      sha256: dd904f795d4b4f3b870833847c461801f6750a9fa8e61ea5ac53f9422b31f250
+      sha256: "53e943d4206a5e30df338fd4c6e7a077e02254531b138a15aec3bd143c1a8b3c"
       url: "https://pub.dev"
     source: hosted
-    version: "1.9.1"
+    version: "1.10.0"
   sprintf:
     dependency: "direct overridden"
     description:
@@ -1026,28 +1010,28 @@ packages:
   sunny_dart:
     dependency: "direct main"
     description:
-      path: "/Users/ericm/reliveit/checkout/SunnyApp/sunny_dart"
+      path: "/Users/ericm/aesthetika/checkout/SunnyApp/sunny_dart"
       relative: false
     source: path
     version: "0.11.1"
   sunny_data:
     dependency: "direct overridden"
     description:
-      path: "/Users/ericm/reliveit/checkout/SunnyApp/sunny_data"
+      path: "/Users/ericm/aesthetika/checkout/SunnyApp/sunny_data"
       relative: false
     source: path
     version: "1.0.0+2"
   sunny_sdk_core:
     dependency: "direct main"
     description:
-      path: "/Users/ericm/reliveit/checkout/SunnyApp/sunny_sdk_core"
+      path: "/Users/ericm/aesthetika/checkout/SunnyApp/sunny_sdk_core"
       relative: false
     source: path
     version: "2.5.0"
   sunny_service_stubs:
     dependency: "direct main"
     description:
-      path: "/Users/ericm/reliveit/checkout/ericmartineau/sunny_service_stubs"
+      path: "/Users/ericm/aesthetika/checkout/ericmartineau/sunny_service_stubs"
       relative: false
     source: path
     version: "0.5.1"
@@ -1071,10 +1055,10 @@ packages:
     dependency: transitive
     description:
       name: test_api
-      sha256: ad540f65f92caa91bf21dfc8ffb8c589d6e4dc0c2267818b4cc2792857706206
+      sha256: daadc9baabec998b062c9091525aa95786508b1c48e9c30f1f891b8bf6ff2e64
       url: "https://pub.dev"
     source: hosted
-    version: "0.4.16"
+    version: "0.5.2"
   time:
     dependency: transitive
     description:
@@ -1119,10 +1103,10 @@ packages:
     dependency: "direct overridden"
     description:
       name: uuid
-      sha256: e3cfb7bf2e145aaad0fa5b3a850a466c908a961712c5aa06480392ee16a6159f
+      sha256: "648e103079f7c64a36dc7d39369cabb358d377078a051d6ae2ad3aa539519313"
       url: "https://pub.dev"
     source: hosted
-    version: "4.0.0-beta1-1"
+    version: "3.0.7"
   vector_math:
     dependency: transitive
     description:
@@ -1143,22 +1127,22 @@ packages:
     dependency: transitive
     description:
       name: web_socket_channel
-      sha256: "3a969ddcc204a3e34e863d204b29c0752716f78b6f9cc8235083208d268a4ccd"
+      sha256: d88238e5eac9a42bb43ca4e721edba3c08c6354d4a53063afaa568516217621b
       url: "https://pub.dev"
     source: hosted
-    version: "2.2.0"
+    version: "2.4.0"
   win32:
     dependency: "direct overridden"
     description:
       name: win32
-      sha256: "5cdbe09a75b5f4517adf213c68aaf53ffa162fadf54ba16f663f94f3d2664a56"
+      sha256: "7dacfda1edcca378031db9905ad7d7bd56b29fd1a90b0908b71a52a12c41e36b"
       url: "https://pub.dev"
     source: hosted
-    version: "4.1.1"
+    version: "5.0.3"
   worker_service:
     dependency: "direct main"
     description:
-      path: "/Users/ericm/reliveit/checkout/SunnyApp/worker_service"
+      path: "/Users/ericm/aesthetika/checkout/SunnyApp/worker_service"
       relative: false
     source: path
     version: "0.7.4"
@@ -1179,5 +1163,5 @@ packages:
     source: hosted
     version: "3.1.0"
 sdks:
-  dart: ">=2.18.0 <3.0.0"
-  flutter: ">=2.10.0"
+  dart: ">=3.0.0-0 <4.0.0"
+  flutter: ">=3.3.0"
